@@ -158,7 +158,7 @@ section{padding-block:96px}
 .me dl{margin:0;display:grid;gap:12px;border-top:1px solid var(--line);padding-top:18px}
 .me dt{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .me dd{margin:0;font-weight:600;overflow-wrap:anywhere}
-form.lead{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:32px;display:grid;gap:20px;min-width:0}
+form.lead{scroll-margin-top:16px;background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:32px;display:grid;gap:20px;min-width:0}
 form.lead h2{font-size:1.7rem;font-weight:600}
 .modes{display:flex;gap:8px;flex-wrap:wrap}
 .modes button{font:600 .9rem var(--tx);padding:.7em 1.2em;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
@@ -278,12 +278,12 @@ footer .fcontact a{display:inline-flex;align-items:center;gap:6px;padding:.55em 
         <a href="#kontakt">Kontakt</a>
       </nav>
       <button class="icon" type="button" id="navSearch" aria-label="Hledat nemovitost"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
-      <a class="btn btn-red nav-cta" href="#kontakt" data-mode="prodej">Ozvěte se</a>
+      <a class="btn btn-red nav-cta" href="#leadForm" data-mode="prodej">Ozvěte se</a>
       <button class="burger" type="button" id="burger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
     </div>
     <div class="mnav" id="mnav" hidden>
       <a href="#nabidka">Nabídka</a><a href="#sluzby">Služby</a><a href="#o-mne">O mně</a><a href="#kancelar">Kancelář</a><a href="#kontakt">Kontakt</a>
-      <a class="btn btn-red" href="#kontakt" data-mode="prodej">Ozvěte se</a>
+      <a class="btn btn-red" href="#leadForm" data-mode="prodej">Ozvěte se</a>
     </div>
 
     <div class="hero-grid">
@@ -296,7 +296,7 @@ footer .fcontact a{display:inline-flex;align-items:center;gap:6px;padding:.55em 
         </form>
         <div class="ctas">
           <a class="btn btn-red" href="#o-mne">O mně</a>
-          <a class="btn btn-ghost" href="#kontakt" data-mode="prodej">Prodat nemovitost</a>
+          <a class="btn btn-ghost" href="#leadForm" data-mode="prodej">Prodat nemovitost</a>
         </div>
       </div>
     </div>
@@ -316,7 +316,7 @@ footer .fcontact a{display:inline-flex;align-items:center;gap:6px;padding:.55em 
       <span class="lab"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11 12 4l9 7M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>Byty, domy a pozemky</span>
       <p>Nové nabídky posílám zájemcům dřív, než se objeví na portálech. Stačí mi napsat, co hledáte.</p>
     </a>
-    <a href="#kontakt" class="hot" data-mode="hledam">
+    <a href="#leadForm" class="hot" data-mode="hledam">
       <h3>Kde působím</h3>
       <span class="lab"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>Olomouc a okolí</span>
       <p>Olomouc a všechny její čtvrti, Šternberk, Litovel, Uničov, Hlubočky, Velký Týnec a obce v okolí.</p>
@@ -349,8 +349,8 @@ footer .fcontact a{display:inline-flex;align-items:center;gap:6px;padding:.55em 
         <li>Pomoc s hypotékou pro kupující</li>
       </ul>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
-        <a class="btn btn-red" href="#kontakt" data-mode="prodej">Chci prodat</a>
-        <a class="btn btn-dark" href="#kontakt" data-mode="hledam">Hledám nemovitost</a>
+        <a class="btn btn-red" href="#leadForm" data-mode="prodej">Chci prodat</a>
+        <a class="btn btn-dark" href="#leadForm" data-mode="hledam">Hledám nemovitost</a>
       </div>
     </div>
     <div class="img" role="img" aria-label="Ukázková fotka rodinného domu"></div>
@@ -366,7 +366,7 @@ footer .fcontact a{display:inline-flex;align-items:center;gap:6px;padding:.55em 
       <dl>
         <div><dt>Adresa</dt><dd>Dolní Novosadská 803/55, 779 00 Olomouc 9</dd></div>
       </dl>
-      <div><a class="btn btn-red" href="#kontakt" data-mode="prodej">Domluvit schůzku</a></div>
+      <div><a class="btn btn-red" href="#leadForm" data-mode="prodej">Domluvit schůzku</a></div>
       <p class="note">Ilustrační fotografie kanceláře RE/MAX.</p>
     </div>
     <div class="gal">
@@ -435,7 +435,7 @@ footer .fcontact a{display:inline-flex;align-items:center;gap:6px;padding:.55em 
 
 <div class="callbar" aria-label="Rychlý kontakt">
   <a class="btn btn-dark" href="tel:+420776120447"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Zavolat</a>
-  <a class="btn btn-red" href="#kontakt" data-mode="prodej">Napsat poptávku</a>
+  <a class="btn btn-red" href="#leadForm" data-mode="prodej">Napsat poptávku</a>
 </div>
 <footer>
   <div class="wrap">
@@ -467,7 +467,7 @@ function renderListings(){
       <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11 12 4l9 7M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
       <h3>${query ? `Pro „${query}“ teď nic nenabízím` : "Nové nabídky právě připravuji"}</h3>
       <p>Momentálně nemám žádnou nemovitost ve veřejné nabídce. Napište mi, co hledáte, a jakmile se objeví něco vhodného, ozvu se vám jako prvnímu.</p>
-      <div class="more" style="margin-top:6px"><a class="btn btn-red" href="#kontakt" data-mode="hledam">Hledám nemovitost</a><a class="btn btn-dark" href="#kontakt" data-mode="prodej">Chci prodat</a></div>
+      <div class="more" style="margin-top:6px"><a class="btn btn-red" href="#leadForm" data-mode="hledam">Hledám nemovitost</a><a class="btn btn-dark" href="#leadForm" data-mode="prodej">Chci prodat</a></div>
     </div>`; box.querySelectorAll("a[data-mode]").forEach(a => a.addEventListener("click", () => setMode(a.dataset.mode))); return; }
   box.innerHTML = items.map(l => `<button type="button" class="home" data-zajem="${l.id}" style="background-image:url('${l.foto}')">
       <div class="tags">${l.rezervace ? '<span class="tag">Rezervováno</span>' : l.novinka ? '<span class="tag red">Novinka</span>' : '<span></span>'}<span class="tag demo">Ukázka</span></div>
@@ -505,7 +505,7 @@ document.getElementById("listings").addEventListener("click", e => {
   document.getElementById("typ").value = l.typ === "byt" ? "Byt" : l.typ === "dum" ? "Rodinný dům" : "Pozemek";
   document.getElementById("lokalita").value = l.lokalita;
   document.getElementById("zprava").value = `Mám zájem o nemovitost ${l.id}: ${l.nazev}, ${l.lokalita} (${kc(l.cena)}). Prosím o více informací nebo termín prohlídky.`;
-  document.getElementById("kontakt").scrollIntoView({behavior: reduce()});
+  document.getElementById("leadForm").scrollIntoView({behavior: reduce()});
   setTimeout(() => document.getElementById("jmeno").focus({preventScroll:true}), 400);
 });
 
