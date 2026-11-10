@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dvougenerační dům 10+1, Havířov-Šumbark – Adam Starovič</title>
+<meta name="description" content="Prodej podsklepeného dvougeneračního rodinného domu 10+1 s garáží a zahradou, pozemek 1 329 m², Sokolská, Havířov-Šumbark. Adam Starovič, RE/MAX Komfort.">
+<!-- NÁHLED: před zveřejněním odstranit noindex -->
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Dvougenerační dům 10+1, Havířov-Šumbark">
+<meta property="og:description" content="Pozemek 1 329 m², garáž, dílna, sklep, zahrada 931 m².">
+<meta property="og:image" content="img/p103.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap">
+<style>
+:root{
+  --bg:#ffffff; --bg-2:#f6f7f9; --ink:#14181f; --muted:#5f6673; --line:#e6e8ec;
+  --red:#dc1c2e; --red-dk:#b5121f; --red-soft:#fdecee; --navy:#0c1a33; --blue:#003da5;
+  --ai:#6d28d9; --ai-soft:#f1eafe; --ok:#1d7f4e; --err:#c62828;
+  --hd:"Outfit","Segoe UI",system-ui,sans-serif;
+  --tx:"DM Sans","Segoe UI",system-ui,-apple-system,sans-serif;
+  --r:16px; --shadow:0 18px 40px rgba(20,24,31,.10);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--tx);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--hd);margin:0;line-height:1.12;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px;border-radius:6px}
+.wrap{max-width:1140px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;font:600 .95rem/1 var(--tx);padding:.95em 1.6em;border-radius:999px;border:1.5px solid transparent;cursor:pointer;text-decoration:none;transition:background .15s,color .15s,transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-red{background:var(--red);color:#fff}.btn-red:hover{background:var(--red-dk)}
+.btn-ghost{border-color:rgba(255,255,255,.85);color:#fff;background:transparent}.btn-ghost:hover{background:#fff;color:var(--ink)}
+.btn-dark{border-color:var(--ink);color:var(--ink);background:transparent}.btn-dark:hover{background:var(--ink);color:#fff}
+.kicker{font:600 .78rem var(--hd);letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
+.bar{width:44px;height:4px;border-radius:2px;background:var(--red)}
+section{padding-block:88px}
+.head{display:grid;gap:14px;margin-bottom:36px;max-width:44em}
+.head h2{font-size:clamp(1.8rem,3.6vw,2.5rem);font-weight:700}
+.head p{color:var(--muted)}
+
+/* top bar */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:50;color:#fff;padding-top:env(safe-area-inset-top,0px);transition:background .25s,box-shadow .25s}
+.topbar.solid{background:rgba(12,26,51,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.nav{display:flex;align-items:center;gap:24px;padding-block:18px;transition:padding .25s}
+.topbar.solid .nav{padding-block:10px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo .rx{height:28px;width:auto}
+.logo .sep{width:1px;height:32px;background:currentColor;opacity:.35}
+.logo b{font:700 1.15rem var(--hd);display:block;line-height:1.1}
+.logo small{white-space:nowrap;font-size:.72rem;opacity:.8;letter-spacing:.06em;text-transform:uppercase}
+.nav nav{display:flex;gap:4px 24px;margin-left:auto;font-size:.92rem}
+.nav nav a{text-decoration:none;opacity:.85}.nav nav a:hover{opacity:1}
+.nav .btn{padding:.7em 1.2em;font-size:.88rem}
+.back{display:none}
+@media (max-width:900px){.nav nav{display:none}.nav .btn{margin-left:auto}}
+@media (max-width:520px){.logo .rx{height:20px}.logo .sep{height:26px}.logo b{font-size:.98rem}.logo small{font-size:.64rem}.nav{gap:10px}.nav .btn{display:none}}
+
+/* hero */
+.hero{position:relative;color:#fff;min-height:min(92vh,760px);display:flex;align-items:flex-end;isolation:isolate;background:var(--navy)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%;z-index:-2}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(12,26,51,.92) 0%,rgba(12,26,51,.55) 38%,rgba(12,26,51,.10) 70%,rgba(12,26,51,.45) 100%)}
+.hero .wrap{width:100%;padding-block:120px 48px;display:grid;gap:18px}
+.crumbs{font-size:.85rem;opacity:.8}
+.crumbs a{text-decoration:none}.crumbs a:hover{text-decoration:underline}
+.badges{display:flex;gap:8px;flex-wrap:wrap}
+.tag{font-size:.75rem;font-weight:600;padding:.4em .85em;border-radius:999px;background:#fff;color:var(--ink)}
+.tag.red{background:var(--red);color:#fff}
+.hero h1{font-size:clamp(2.1rem,5vw,3.6rem);font-weight:700;max-width:16em}
+.hero .addr{font-size:1.05rem;opacity:.9;display:flex;align-items:center;gap:8px}
+.hero-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;margin-top:8px}
+.price small{display:block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
+.price b{font:700 clamp(1.8rem,3.4vw,2.4rem) var(--hd);font-variant-numeric:tabular-nums}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(6,1fr);background:#fff;border-radius:var(--r);box-shadow:var(--shadow);margin-top:-34px;position:relative;z-index:2;overflow:hidden}
+.stats div{padding:20px 18px;border-left:1px solid var(--line);min-width:0}
+.stats div:first-child{border-left:0}
+.stats b{display:block;font:600 1.4rem var(--hd);line-height:1.15;font-variant-numeric:tabular-nums}
+.stats b small{font-size:.85rem;font-weight:500}
+.stats span{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+@media (max-width:900px){.stats{grid-template-columns:repeat(3,1fr)}.stats div:nth-child(4){border-left:0}.stats div:nth-child(n+4){border-top:1px solid var(--line)}}
+@media (max-width:520px){.stats{grid-template-columns:1fr 1fr}.stats div{padding:16px 14px;border-left:0!important;border-top:1px solid var(--line)}.stats div:nth-child(-n+2){border-top:0}.stats div:nth-child(even){border-left:1px solid var(--line)!important}.stats b{font-size:1.2rem}}
+
+/* about */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.about .txt{display:grid;gap:18px;min-width:0}
+.about .txt p{color:var(--muted)}
+.about .lead{font-size:1.15rem;color:var(--ink)!important;line-height:1.6}
+.why{background:var(--bg-2);border-radius:var(--r);padding:24px 26px;display:grid;gap:12px;margin-top:6px}
+.why h3{font-size:1.15rem;font-weight:600}
+ul.dots{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+ul.dots li{display:flex;gap:12px;align-items:baseline}
+ul.dots li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red);flex:none;transform:translateY(-1px)}
+.params{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:8px 24px;min-width:0}
+.params h3{font-size:1.1rem;font-weight:600;padding:16px 0 8px}
+.params dl{margin:0}
+.params dl div{display:grid;grid-template-columns:42% 1fr;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:.93rem}
+.params dt{color:var(--muted)}
+.params dd{margin:0;font-weight:500;overflow-wrap:anywhere}
+.params dd.tbd{color:var(--muted);font-style:italic;font-weight:400}
+@media (max-width:900px){.about{grid-template-columns:1fr;gap:36px}}
+
+/* floors */
+.floors{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.floor{border-radius:var(--r);background:var(--bg-2);padding:24px;display:grid;gap:10px;align-content:start;border-top:4px solid var(--blue)}
+.floor h3{font-size:1.1rem;font-weight:600}
+.floor p{color:var(--muted);font-size:.95rem}
+@media (max-width:860px){.floors{grid-template-columns:1fr}}
+
+/* gallery */
+#galerie{background:var(--bg-2)}
+.gal{display:grid;grid-auto-flow:dense;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:12px}
+.gal button{position:relative;border:0;padding:0;border-radius:12px;overflow:hidden;cursor:zoom-in;background:#dfe2e7;min-width:0}
+.gal button img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gal button:hover img{transform:scale(1.04)}
+.gal .big{grid-column:span 2;grid-row:span 2}
+.gal .wide{grid-column:span 2}
+.cap{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.94);color:var(--navy);font:500 .78rem var(--hd);letter-spacing:.02em;padding:.35em .7em;border-radius:6px;pointer-events:none}
+.gal-more{display:flex;justify-content:center;margin-top:28px}
+@media (max-width:860px){.gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}}
+@media (max-width:520px){.gal{grid-auto-rows:130px;gap:8px}.cap{font-size:.7rem;left:6px;bottom:6px}}
+
+/* lightbox */
+dialog.lb{border:0;padding:0;max-width:none;max-height:none;width:100vw;height:100dvh;background:rgba(8,12,20,.96);color:#fff}
+dialog.lb::backdrop{background:rgba(8,12,20,.96)}
+.lb figure{margin:0;height:100%;display:grid;grid-template-rows:1fr auto;place-items:center;padding:56px 16px 16px}
+.lb img{max-width:100%;max-height:calc(100dvh - 120px);object-fit:contain;border-radius:6px}
+.lb figcaption{font-size:.9rem;opacity:.85;padding-top:10px;text-align:center}
+.lb .x,.lb .nv{position:absolute;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;border-radius:50%;width:46px;height:46px;display:grid;place-items:center;cursor:pointer}
+.lb .x{top:12px;right:12px}
+.lb .nv{top:50%;transform:translateY(-50%)}
+.lb .prev{left:12px}.lb .next{right:12px}
+.lb .nv:hover,.lb .x:hover{background:rgba(255,255,255,.25)}
+
+/* garden */
+.garden{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.garden .txt{display:grid;gap:18px;min-width:0}
+.garden .txt>p{color:var(--muted)}
+.garden .pics{display:grid;grid-template-columns:1fr 1fr;gap:12px;min-width:0}
+.garden .pics button:first-child{grid-column:1/-1;aspect-ratio:16/9}
+.garden .pics button{aspect-ratio:4/3;position:relative;border:0;padding:0;border-radius:12px;overflow:hidden;cursor:zoom-in;min-width:0}
+.garden .pics img{width:100%;height:100%;object-fit:cover}
+@media (max-width:860px){.garden{grid-template-columns:1fr;gap:32px}}
+
+/* AI vizualizace */
+#vizualizace{background:var(--navy);color:#fff}
+#vizualizace .head p{color:#c5cee0}
+#vizualizace .kicker{color:#c4b5fd}
+.ai-note{display:flex;gap:12px;align-items:flex-start;background:rgba(196,181,253,.12);border:1px solid rgba(196,181,253,.35);border-radius:12px;padding:14px 16px;font-size:.92rem;color:#e4defc;max-width:52em}
+.ai-note svg{flex:none;margin-top:2px}
+.viz-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:28px 0 18px}
+.viz-tabs button{font:600 .88rem var(--tx);padding:.65em 1.1em;border-radius:999px;border:1.5px solid rgba(255,255,255,.25);background:transparent;color:#fff;cursor:pointer}
+.viz-tabs button[aria-selected="true"]{background:#fff;color:var(--navy);border-color:#fff}
+.cmp{position:relative;aspect-ratio:4/3;max-height:680px;width:100%;border-radius:var(--r);overflow:hidden;background:#000;user-select:none;touch-action:pan-y;--pos:50%}
+.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cmp .after{clip-path:inset(0 0 0 var(--pos))}
+.cmp .handle{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;margin-left:-1.5px;background:#fff;pointer-events:none}
+.cmp .handle::after{content:"";position:absolute;top:50%;left:50%;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230c1a33' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='m9 6-6 6 6 6M15 6l6 6-6 6'/%3E%3C/svg%3E") center/22px no-repeat;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.cmp .lbl{position:absolute;top:14px;font:600 .78rem var(--hd);letter-spacing:.06em;text-transform:uppercase;padding:.45em .8em;border-radius:6px;pointer-events:none}
+.cmp .l1{left:14px;background:rgba(255,255,255,.94);color:var(--navy)}
+.cmp .l2{right:14px;background:var(--ai);color:#fff}
+.cmp .wm{position:absolute;right:14px;bottom:14px;font:600 .75rem var(--hd);background:rgba(109,40,217,.92);color:#fff;padding:.45em .8em;border-radius:6px;pointer-events:none}
+.viz-cap{margin-top:12px;font-size:.88rem;color:#c5cee0}
+@media (max-width:600px){.cmp{aspect-ratio:1/1}.cmp .lbl{font-size:.68rem;top:10px}.cmp .l1{left:10px}.cmp .l2{right:10px}}
+
+/* lokalita */
+.loc{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.loc .txt{display:grid;gap:18px;min-width:0}
+.loc .txt>p{color:var(--muted)}
+.loc .map{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.loc .map img{width:100%;aspect-ratio:696/616;object-fit:cover}
+.note{font-size:.8rem;color:var(--muted)}
+@media (max-width:860px){.loc{grid-template-columns:1fr;gap:28px}}
+
+/* kontakt */
+#kontakt{background:var(--bg-2)}
+.contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
+@media (max-width:920px){.contact{grid-template-columns:1fr}}
+.me{background:var(--navy);color:#fff;border-radius:var(--r);padding:28px;display:grid;gap:18px;min-width:0}
+.me .rx{height:26px;width:auto}
+.me h3{font-size:1.5rem}
+.me .role{color:#ff8d98;font-weight:600;font-size:.92rem}
+.me p{color:#c5cee0;font-size:.95rem}
+.me dl{margin:0;display:grid;gap:12px;border-top:1px solid rgba(255,255,255,.15);padding-top:18px}
+.me dt{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#9aa6bd}
+.me dd{margin:0;font-weight:600;overflow-wrap:anywhere}
+.me dd a{text-decoration:none}
+form.lead{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);padding:32px;display:grid;gap:18px;min-width:0}
+form.lead h2{font-size:1.6rem;font-weight:600}
+form.lead .sub{color:var(--muted);font-size:.95rem;margin-top:-8px}
+.fs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.f{display:grid;gap:6px;min-width:0}
+.f.full{grid-column:1/-1}
+label{font-weight:500;font-size:.88rem}
+label small{font-weight:400;color:var(--muted)}
+input,select,textarea{font:400 1rem var(--tx);color:var(--ink);background:var(--bg-2);border:1px solid var(--line);border-radius:10px;padding:.8em .9em;width:100%;min-width:0}
+textarea{min-height:100px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--red);outline-offset:0;border-color:var(--red);background:#fff}
+.radios{display:flex;flex-wrap:wrap;gap:8px}
+.radios label{display:inline-flex;align-items:center;gap:8px;padding:.55em .95em;border:1px solid var(--line);border-radius:999px;cursor:pointer;font-weight:400;background:#fff}
+.radios input{width:auto;margin:0;accent-color:var(--red)}
+.radios label:has(input:checked){border-color:var(--red);background:var(--red-soft)}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.86rem;font-weight:400;color:var(--muted)}
+.consent input{width:auto;margin-top:.3em;accent-color:var(--red)}
+.submit-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.err-msg{color:var(--err);font-size:.9rem;font-weight:500}
+.done{display:grid;gap:12px}.done h3{font-size:1.7rem}.done .ok{color:var(--ok);font-weight:600}
+@media (max-width:560px){.fs{grid-template-columns:1fr}form.lead,.me{padding:20px}.submit-row .btn{width:100%}}
+
+.disclaimer{font-size:.8rem;color:var(--muted);padding-block:24px;border-top:1px solid var(--line)}
+footer{border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center;padding-block:28px calc(28px + env(safe-area-inset-bottom,0px));color:var(--muted);font-size:.88rem}
+footer .logo{color:var(--ink)}
+footer nav{display:flex;gap:6px 20px;flex-wrap:wrap}
+footer nav a{text-decoration:none}footer nav a:hover{color:var(--red)}
+
+/* mobilní lišta */
+.callbar{display:none}
+@media (max-width:600px){
+  section{padding-block:60px}
+  .hero{min-height:88vh}
+  .hero .wrap{padding-block:96px 56px;gap:14px}
+  .hero .ctas{width:100%}.hero .ctas .btn{flex:1;padding-inline:1em}
+  .callbar{display:grid;grid-template-columns:1fr 1.4fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px max(16px,env(safe-area-inset-left,0px)) calc(10px + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s}
+  .callbar.on{transform:none}
+  .callbar .btn{padding:.9em 1em}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar" id="topbar">
+  <div class="wrap nav">
+    <a class="logo" href="/"><img class="rx" src="img/remax-white.png" alt="RE/MAX"><span class="sep"></span><span><b>Adam Starovič</b><small>Komfort · Olomouc</small></span></a>
+    <nav aria-label="Navigace na stránce">
+      <a href="#o-dome">O domě</a>
+      <a href="#galerie">Fotky</a>
+      <a href="#zahrada">Zahrada</a>
+      <a href="#vizualizace">Vizualizace</a>
+      <a href="#lokalita">Lokalita</a>
+    </nav>
+    <a class="btn btn-red" href="#kontakt">Domluvit prohlídku</a>
+  </div>
+</div>
+
+<header class="hero">
+  <img src="img/p103.jpg" alt="Rodinný dům s mansardovou střechou, pohled z ulice" fetchpriority="high">
+  <div class="wrap">
+    <div class="crumbs"><a href="/">Úvod</a> · <a href="/#nabidka">Nabídka</a> · Havířov-Šumbark</div>
+    <div class="badges"><span class="tag red">Na prodej</span><span class="tag">Dvougenerační</span><span class="tag">Rodinný dům</span></div>
+    <h1>Prostorný dvougenerační dům se zahradou</h1>
+    <div class="addr"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Sokolská, Havířov-Šumbark · Moravskoslezský kraj</div>
+    <div class="hero-foot">
+      <div class="price"><small>Cena</small><b>8 500 000 Kč</b></div>
+      <div class="ctas">
+        <a class="btn btn-red" href="#kontakt">Domluvit prohlídku</a>
+        <a class="btn btn-ghost" href="#galerie">Prohlédnout fotky</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <div class="stats">
+    <div><b>10+1</b><span>Dispozice</span></div>
+    <div><b>1 329 <small>m²</small></b><span>Pozemek</span></div>
+    <div><b>931 <small>m²</small></b><span>Zahrada</span></div>
+    <div><b>2 + 3</b><span>Koupelny + WC</span></div>
+    <div><b>1×</b><span>Garáž</span></div>
+    <div><b>2 NP</b><span>+ půda, sklep</span></div>
+  </div>
+</div>
+
+<section id="o-dome">
+  <div class="wrap about">
+    <div class="txt">
+      <span class="kicker">O nemovitosti</span>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.5rem);font-weight:700">Dvougenerační dům na klidném místě Šumbarku</h2>
+      <div class="bar"></div>
+      <p class="lead">Nabízím k prodeji podsklepený dvougenerační rodinný dům 10+1 s garáží, dílnou a rozlehlou zahradou v klidné zástavbě rodinných domů v ulici Sokolská v Havířově-Šumbarku.</p>
+      <p>Pozemek má celkem 1 329 m², z toho 398 m² tvoří zastavěná plocha a nádvoří a 931 m² zahrada. Obě podlaží mají vlastní koupelnu i WC, proto je dům vhodný pro bydlení dvou generací. Ve druhém podlaží je zastřešená veranda s výhledem do okolí.</p>
+      <p>Od roku 2000 byl dům postupně rekonstruován. Má euro okna, dřevěná i plastová. Mansardová střecha chrání obvodové zdivo 2. NP do dvou třetin výšky a je zateplená minerální vlnou o tloušťce cca 20 cm. Fasáda zateplená není. K vytápění slouží plynový kotel a kotel na tuhá paliva (pelety, hnědé uhlí ořech do 30 mm). Dům je napojený na elektřinu, plyn, vodovod a kanalizaci.</p>
+      <div class="why">
+        <h3>Proč právě tento dům</h3>
+        <ul class="dots">
+          <li>Celkem 1 329 m² vlastního oploceného pozemku</li>
+          <li>Dvougenerační bydlení, každé patro má vlastní koupelnu a WC</li>
+          <li>Dvojí vytápění: plyn a kotel na pelety či uhlí</li>
+          <li>Zázemí pro dílnu, auta i pěstování: garáž, hospodářská budova, dva skleníky</li>
+        </ul>
+      </div>
+    </div>
+    <aside class="params" aria-label="Parametry nemovitosti">
+      <h3>Parametry</h3>
+      <dl>
+        <div><dt>Typ</dt><dd>Rodinný dům, dvougenerační</dd></div>
+        <div><dt>Dispozice</dt><dd>10+1, dílna, sklep</dd></div>
+        <div><dt>Podlaží</dt><dd>2 NP + půda (výška cca 1,5 m)</dd></div>
+        <div><dt>Sklep</dt><dd>Pod větší polovinou domu</dd></div>
+        <div><dt>Pozemek celkem</dt><dd>1 329 m²</dd></div>
+        <div><dt>Zastavěná plocha a nádvoří</dt><dd>398 m²</dd></div>
+        <div><dt>Zahrada</dt><dd>931 m²</dd></div>
+        <div><dt>Užitná plocha</dt><dd class="tbd">Bude doplněna</dd></div>
+        <div><dt>Stav</dt><dd>Dobrý, postupně rekonstruován od roku 2000</dd></div>
+        <div><dt>Konstrukce</dt><dd>Smíšená (kámen, cihla, tvárnice)</dd></div>
+        <div><dt>Okna</dt><dd>Euro okna dřevěná i plastová</dd></div>
+        <div><dt>Střecha</dt><dd>Mansardová, zateplená min. vlnou cca 20 cm</dd></div>
+        <div><dt>Fasáda</dt><dd>Nezateplená</dd></div>
+        <div><dt>Vytápění</dt><dd>Plynový kotel + kotel na tuhá paliva</dd></div>
+        <div><dt>Sítě</dt><dd>Elektřina, plyn, vodovod, kanalizace</dd></div>
+        <div><dt>Garáž</dt><dd>1×, cca 7,6 × 3,8 m</dd></div>
+        <div><dt>Další stavby</dt><dd>Hospodářská budova, 2 skleníky, altán, zastřešené stání</dd></div>
+        <div><dt>Příjezd</dt><dd>Obecní asfaltová komunikace</dd></div>
+        <div><dt>PENB</dt><dd class="tbd">Bude doplněn</dd></div>
+        <div><dt>Cena</dt><dd style="color:var(--red);font-weight:600">8 500 000 Kč</dd></div>
+      </dl>
+    </aside>
+  </div>
+
+  <div class="wrap">
+    <div class="floors">
+      <div class="floor">
+        <h3>1. nadzemní podlaží</h3>
+        <p>Vstup, chodba se schodištěm, kuchyň, šest pokojů, dílna, koupelna a dvě WC. Odtud se jde do sklepa. Samostatný vstup vede do spojovací průchozí místnosti a dál do hospodářské budovy.</p>
+      </div>
+      <div class="floor">
+        <h3>2. nadzemní podlaží</h3>
+        <p>Chodba, čtyři pokoje, koupelna, WC a zastřešená veranda s výhledem do okolí.</p>
+      </div>
+      <div class="floor">
+        <h3>Půda a sklep</h3>
+        <p>Nad 2. NP je půdní úložný prostor s výškou cca 1,5 m. Sklep je pod větší polovinou domu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Fotogalerie</span>
+      <h2>Prohlédněte si dům</h2>
+      <p>Kliknutím fotku zvětšíte. Šipkami nebo přejetím prstem listujete dál.</p>
+    </div>
+    <div class="gal" id="gal"></div>
+    <div class="gal-more"><button class="btn btn-dark" type="button" id="galMore">Zobrazit všechny fotky</button></div>
+  </div>
+</section>
+
+<section id="zahrada">
+  <div class="wrap garden">
+    <div class="txt">
+      <span class="kicker">Zahrada a zázemí</span>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.5rem);font-weight:700">931 m² zahrady pro relax i pěstování</h2>
+      <div class="bar"></div>
+      <p>Za domem se otevírá rozlehlá oplocená zahrada se vzrostlými jehličnany a ovocnými stromy. Na pozemek se vjíždí posuvnou bránou.</p>
+      <ul class="dots">
+        <li>Dva skleníky na betonovém základu s pozinkovanou konstrukcí, menší lze vytápět zabudovanými radiátory</li>
+        <li>Hospodářská budova cca 9 × 5,5 m, v sedlové střeše úložný prostor s výškou 2,6 m v hřebeni</li>
+        <li>Garáž cca 7,6 × 3,8 m, zastřešené garážové stání a altán</li>
+        <li>Ovocné stromy a dostatek místa pro hřiště, bazén nebo zahradu</li>
+      </ul>
+    </div>
+    <div class="pics" id="gardenPics"></div>
+  </div>
+</section>
+
+<section id="vizualizace">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Vizualizace · vytvořeno pomocí AI</span>
+      <h2>Jak by dům mohl vypadat po rekonstrukci</h2>
+      <p>Posuňte jezdec a porovnejte skutečnou fotku se vzorovým návrhem.</p>
+    </div>
+    <div class="ai-note"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8h.01M11 12h1v5h1"/></svg>
+      <span>Vizualizace „po“ jsou vytvořené pomocí umělé inteligence (AI). Mají pouze ilustrační charakter a neodpovídají skutečnému stavu nemovitosti. Rozsah a podoba rekonstrukce záleží na kupujícím.</span></div>
+    <div class="viz-tabs" role="tablist" aria-label="Vyberte místnost" id="vizTabs"></div>
+    <div class="cmp" id="cmp">
+      <img class="before" id="vizBefore" alt="">
+      <img class="after" id="vizAfter" alt="">
+      <div class="handle"></div>
+      <span class="lbl l1">Současný stav</span>
+      <span class="lbl l2">Vizualizace AI</span>
+      <span class="wm">Vytvořeno pomocí AI · ilustrační</span>
+      <input type="range" min="0" max="100" value="50" aria-label="Porovnání před a po">
+    </div>
+    <p class="viz-cap" id="vizCap"></p>
+  </div>
+</section>
+
+<section id="lokalita">
+  <div class="wrap loc">
+    <div class="txt">
+      <span class="kicker">Lokalita</span>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.5rem);font-weight:700">Klidná ulice s veškerou občanskou vybaveností</h2>
+      <div class="bar"></div>
+      <p>Dům stojí v ulici Sokolská v Havířově-Šumbarku, v zástavbě rodinných domů s obecní asfaltovou komunikací. Podle územního plánu jde o plochy individuálního bydlení.</p>
+      <p>V docházkové vzdálenosti je sportovní areál s bazénem a krytým bazénem, hřiště a lesopark. Obchody, školy a městská hromadná doprava jsou nadosah.</p>
+      <div><a class="btn btn-dark" href="https://mapy.cz/zakladni?q=Sokolsk%C3%A1%2026%2C%20Hav%C3%AD%C5%99ov" target="_blank" rel="noopener">Zobrazit na Mapy.cz</a></div>
+    </div>
+    <div>
+      <div class="map"><img src="img/mapa.jpg" alt="Hranice pozemku nad ortofotomapou" loading="lazy" width="696" height="616"></div>
+      <p class="note" style="margin-top:8px">Hranice pozemku nad ortofotomapou. Zdroj: ČÚZK, Nahlížení do katastru nemovitostí.</p>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap contact">
+    <aside class="me">
+      <img class="rx" src="img/remax-white.png" alt="RE/MAX">
+      <div><h3>Adam Starovič</h3><div class="role">Realitní makléř RE/MAX Komfort</div></div>
+      <p>Rád vám dům ukážu a zodpovím všechny otázky. Pomohu i s financováním a pojištěním nového bydlení.</p>
+      <dl>
+        <div><dt>Telefon</dt><dd><a href="tel:+420776120447">+420 776 120 447</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:adam.starovic@remax-czech.cz">adam.starovic@remax-czech.cz</a></dd></div>
+        <div><dt>Kancelář</dt><dd>Dolní Novosadská 803/55<br>779 00 Olomouc 9</dd></div>
+      </dl>
+    </aside>
+
+    <form class="lead" id="leadForm" name="prohlidka" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+      <input type="hidden" name="form-name" value="prohlidka">
+      <input type="hidden" name="nemovitost" value="RD 10+1 Havířov-Šumbark, Sokolská">
+      <p hidden><label>Nevyplňujte: <input name="bot-field"></label></p>
+      <h2>Domluvte si prohlídku</h2>
+      <p class="sub">Nechte mi kontakt a ozvu se vám do 24 hodin.</p>
+      <div class="fs">
+        <div class="f"><label for="jmeno">Jméno a příjmení</label><input id="jmeno" name="jmeno" autocomplete="name" required></div>
+        <div class="f"><label for="telefon">Telefon</label><input id="telefon" name="telefon" type="tel" autocomplete="tel" placeholder="+420 …" required pattern="[+0-9 ]{9,17}"></div>
+        <div class="f full"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="f full"><label>Co vás zajímá?</label>
+          <div class="radios">
+            <label><input type="radio" name="zajem" value="prohlídka" checked> Prohlídka</label>
+            <label><input type="radio" name="zajem" value="více informací"> Více informací</label>
+            <label><input type="radio" name="zajem" value="financování"> Financování</label>
+          </div></div>
+        <div class="f full"><label for="zprava">Zpráva <small>(nepovinné)</small></label><textarea id="zprava" name="zprava" placeholder="Např. kdy se vám hodí prohlídka."></textarea></div>
+      </div>
+      <label class="consent" for="gdpr"><input type="checkbox" id="gdpr" name="gdpr" required> <span>Souhlasím se zpracováním osobních údajů za účelem vyřízení mé poptávky. Údaje nepředám třetím stranám.</span></label>
+      <div class="submit-row"><button class="btn btn-red" type="submit">Odeslat</button><span class="err-msg" id="formErr" role="alert"></span></div>
+    </form>
+  </div>
+  <div class="wrap"><p class="disclaimer" style="margin-top:40px">Údaje vycházejí z odhadu tržní ceny (01/2026) a katastru nemovitostí. Nejde o návrh na uzavření smlouvy. Průkaz energetické náročnosti budovy bude doplněn.</p></div>
+</section>
+</main>
+
+<div class="callbar" aria-label="Rychlý kontakt">
+  <a class="btn btn-dark" href="tel:+420776120447">Zavolat</a>
+  <a class="btn btn-red" href="#kontakt">Domluvit prohlídku</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="/"><img class="rx" src="img/remax-black.png" alt="RE/MAX"><span class="sep"></span><span><b>Adam Starovič</b><small>Komfort · Olomouc</small></span></a>
+    <nav aria-label="Patička"><a href="/">Úvod</a><a href="/#nabidka">Nabídka</a><a href="/#kontakt">Kontakt</a></nav>
+    <span>© 2026 · IČO 29745578</span>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb" aria-label="Fotografie">
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="x" type="button" id="lbX" aria-label="Zavřít"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <button class="nv prev" type="button" id="lbP" aria-label="Předchozí"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 6-6 6 6 6"/></svg></button>
+  <button class="nv next" type="button" id="lbN" aria-label="Další"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></button>
+</dialog>
+
+<script>
+/* Fotky: [soubor, popisek, třída v mřížce] */
+const PHOTOS = [
+  ["p103","Dům z ulice","big"],["p26","Kuchyň s jídelnou","wide"],["p22","Obývací pokoj"],["p24","Vstupní hala a schodiště"],
+  ["p57","Zastřešená veranda","wide"],["p42","Pokoj s dřevěným stropem"],["p37","Pokoj v patře"],
+  ["p33","Koupelna s vanou a sprchovým koutem"],["p38","Výhled z patra"],["p59","Pohled na zahradu z patra","wide"],
+  ["p78","Zahradní strana domu","wide"],["p100","Dvůr a zázemí","wide"],
+  ["p25",""],["p20",""],["p14",""],["p36",""],["p39",""],["p43",""],["p52",""],["p55","WC"],["p58",""],["p62",""],
+  ["p64","Sklep"],["p61","Zahrada"],["p75","Zahrada"],["p77",""],["p98",""],["p81","Skleníky a altán"],["p97","Altán"],
+  ["p96","Zázemí pro dílnu"],["p102","Garáž"],["p104","Vstup do domu"]
+];
+const GARDEN = ["p59","p81","p102"];
+const src = n => `img/${n}.jpg`;
+const capOf = n => (PHOTOS.find(p => p[0]===n)||[])[1] || "";
+
+const gal = document.getElementById("gal"), more = document.getElementById("galMore");
+const thumb = (p,i,cls="") => `<button type="button" class="${cls}" data-i="${i}"><img src="${src(p[0])}" alt="${p[1]||"Fotografie domu"}" loading="lazy">${p[1]?`<span class="cap">${p[1]}</span>`:""}</button>`;
+function renderGal(all){
+  const list = all ? PHOTOS : PHOTOS.slice(0,12);
+  gal.innerHTML = list.map((p,i) => thumb(p,i,p[2]||"")).join("");
+  more.hidden = all;
+}
+renderGal(false);
+more.addEventListener("click", () => renderGal(true));
+more.textContent = `Zobrazit všech ${PHOTOS.length} fotek`;
+
+document.getElementById("gardenPics").innerHTML = GARDEN.map(n => {
+  const i = PHOTOS.findIndex(p => p[0]===n); return thumb(PHOTOS[i], i);
+}).join("");
+
+/* Lightbox */
+const lb = document.getElementById("lb"), lbImg = document.getElementById("lbImg"), lbCap = document.getElementById("lbCap");
+let cur = 0;
+function show(i){ cur = (i + PHOTOS.length) % PHOTOS.length; const p = PHOTOS[cur];
+  lbImg.src = src(p[0]); lbImg.alt = p[1] || "Fotografie domu"; lbCap.textContent = `${p[1] ? p[1] + " · " : ""}${cur+1} / ${PHOTOS.length}`; }
+document.addEventListener("click", e => { const b = e.target.closest("[data-i]"); if(!b) return; show(+b.dataset.i); lb.showModal(); });
+document.getElementById("lbX").onclick = () => lb.close();
+document.getElementById("lbP").onclick = () => show(cur-1);
+document.getElementById("lbN").onclick = () => show(cur+1);
+lb.addEventListener("keydown", e => { if(e.key==="ArrowLeft") show(cur-1); if(e.key==="ArrowRight") show(cur+1); });
+lb.addEventListener("click", e => { if(e.target === lb || e.target.tagName === "FIGURE") lb.close(); });
+let tx = null;
+lb.addEventListener("touchstart", e => tx = e.touches[0].clientX, {passive:true});
+lb.addEventListener("touchend", e => { if(tx===null) return; const d = e.changedTouches[0].clientX - tx; if(Math.abs(d) > 40) show(cur + (d < 0 ? 1 : -1)); tx = null; });
+
+/* Vizualizace AI: před / po */
+const VIZ = [
+  ["fasada","Fasáda z ulice"],["zahradni","Zahradní strana"],["kuchyn","Kuchyň"],["obyvak","Obývací pokoj"],
+  ["pokoj","Pokoj v patře"],["koupelna","Koupelna"],["veranda","Veranda"],["zahrada","Zahrada"],["garaz","Garáž"]
+];
+const tabs = document.getElementById("vizTabs"), cmp = document.getElementById("cmp"), range = cmp.querySelector("input");
+const vb = document.getElementById("vizBefore"), va = document.getElementById("vizAfter"), vcap = document.getElementById("vizCap");
+tabs.innerHTML = VIZ.map((v,i) => `<button type="button" role="tab" aria-selected="${i===0}" data-v="${i}">${v[1]}</button>`).join("");
+function setViz(i){
+  const [k,n] = VIZ[i];
+  vb.src = `img/viz-${k}-pred.jpg`; vb.alt = `${n}, současný stav`;
+  va.src = `img/viz-${k}-po.jpg`; va.alt = `${n}, vizualizace možné rekonstrukce vytvořená pomocí AI`;
+  vcap.textContent = `${n}: vlevo skutečná fotografie, vpravo ilustrační návrh vytvořený pomocí AI.`;
+  tabs.querySelectorAll("button").forEach(b => b.setAttribute("aria-selected", +b.dataset.v === i));
+  range.value = 50; cmp.style.setProperty("--pos","50%");
+}
+tabs.addEventListener("click", e => { const b = e.target.closest("[data-v]"); if(b) setViz(+b.dataset.v); });
+range.addEventListener("input", () => cmp.style.setProperty("--pos", range.value + "%"));
+setViz(0);
+
+/* Formulář: na webu (Netlify) se odesílá, jinde jde o ukázku */
+const LIVE = /adamstarovic\.cz$|netlify\.app$/.test(location.hostname);
+const form = document.getElementById("leadForm");
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  const err = document.getElementById("formErr"); err.textContent = "";
+  const bad = [...form.querySelectorAll("[required]")].find(el => !el.checkValidity());
+  if(bad){
+    const name = bad.id === "gdpr" ? "souhlas se zpracováním údajů" : (form.querySelector(`label[for="${bad.id}"]`)?.textContent || "povinné pole").replace(/\(.*\)/,"").trim();
+    err.textContent = `Zkontrolujte prosím: ${name.toLowerCase()}.`; bad.focus(); return;
+  }
+  const data = Object.fromEntries(new FormData(form));
+  if(LIVE){
+    let ok = false;
+    try{ const r = await fetch("/", {method:"POST", headers:{"Content-Type":"application/x-www-form-urlencoded"}, body:new URLSearchParams(data).toString()}); ok = r.ok; }catch(_){}
+    if(!ok){ err.textContent = "Odeslání se nepovedlo. Zkuste to prosím znovu, nebo mi zavolejte."; return; }
+  }
+  form.innerHTML = `<div class="done"><span class="ok">✓ ${LIVE ? "Odesláno" : "Ukázka: nic se neodeslalo"}</span>
+    <h3>Děkuji, ${data.jmeno.split(" ")[0]}!</h3>
+    <p>Ozvu se vám do 24 hodin a domluvíme termín prohlídky.</p></div>`;
+});
+
+/* Lišty */
+const topbar = document.getElementById("topbar");
+const callbar = document.querySelector(".callbar"), kontakt = document.getElementById("kontakt");
+const onScroll = () => {
+  topbar.classList.toggle("solid", scrollY > 10);
+  const k = kontakt.getBoundingClientRect();
+  callbar.classList.toggle("on", scrollY > innerHeight*.6 && !(k.top < innerHeight && k.bottom > 0));
+};
+addEventListener("scroll", onScroll, {passive:true}); onScroll();
+</script>
+</body>
+</html>
