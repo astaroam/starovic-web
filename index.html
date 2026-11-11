@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>body{margin:0}img{max-width:100%}</style>
-<title>Realitní makléř Olomouc | Adam Starovič – RE/MAX Komfort</title>
-<meta name="description" content="Prodej, koupě a odhad ceny nemovitostí v Olomouci a celém Olomouckém kraji. Realitní makléř RE/MAX Komfort Adam Starovič – právní servis, hypotéka i pojištění. Odhad zdarma.">
+<title>Realitní makléř Olomouc a Ostrava | Adam Starovič – RE/MAX Komfort</title>
+<meta name="description" content="Prodej, koupě a odhad ceny nemovitostí v Olomouci, Ostravě a celém Olomouckém a Moravskoslezském kraji. Realitní makléř RE/MAX Komfort Adam Starovič – právní servis, hypotéka i pojištění.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://adamstarovic.cz/">
 <meta name="author" content="Adam Starovič">
@@ -16,8 +16,8 @@
 <meta property="og:locale" content="cs_CZ">
 <meta property="og:site_name" content="Adam Starovič – RE/MAX Komfort">
 <meta property="og:url" content="https://adamstarovic.cz/">
-<meta property="og:title" content="Realitní makléř Olomouc | Adam Starovič – RE/MAX Komfort">
-<meta property="og:description" content="Prodej, koupě a odhad ceny nemovitostí v Olomouci a Olomouckém kraji. Právní servis, hypotéka i pojištění na jednom místě.">
+<meta property="og:title" content="Realitní makléř Olomouc a Ostrava | Adam Starovič – RE/MAX Komfort">
+<meta property="og:description" content="Prodej, koupě a odhad ceny nemovitostí v Olomouci, Ostravě, Olomouckém a Moravskoslezském kraji. Právní servis, hypotéka i pojištění na jednom místě.">
 <meta property="og:image" content="https://adamstarovic.cz/img/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -305,12 +305,13 @@ form.lead{scroll-margin-top:84px}
 
 /* oblast + FAQ */
 .area{background:var(--bg-2)}
-.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.area-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:1000px){.area-grid{grid-template-columns:1fr 1fr}.area-box:last-child{grid-column:1/-1}}
 .area-box{background:#fff;border-radius:var(--r);padding:26px;box-shadow:0 10px 24px rgba(20,24,31,.06)}
 .area-box h3,.area-svc h3{font-size:1.1rem;font-weight:600;margin-bottom:14px}
 .chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .chips li{font-size:.88rem;padding:.4em .85em;border-radius:999px;background:var(--bg-2);border:1px solid var(--line)}
-.area-box:first-child .chips li:first-child{background:var(--red-soft);border-color:#f5c6cb;color:var(--red-dk);font-weight:600}
+.area-box:nth-child(-n+2) .chips li:first-child{background:var(--red-soft);border-color:#f5c6cb;color:var(--red-dk);font-weight:600}
 .area-svc{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:20px}
 .area-svc > div{background:#fff;border-radius:var(--r);padding:22px;box-shadow:0 10px 24px rgba(20,24,31,.06)}
 .area-svc h3{margin-bottom:8px}
@@ -343,8 +344,11 @@ form.lead{scroll-margin-top:84px}
   "@type": "RealEstateAgent",
   "@id": "https://adamstarovic.cz/#makler",
   "name": "Adam Starovič – realitní makléř RE/MAX Komfort",
-  "alternateName": "Adam Starovič RE/MAX Olomouc",
-  "description": "Realitní makléř v Olomouci a Olomouckém kraji. Prodej, koupě a odhad ceny nemovitostí, právní servis, financování a pojištění nemovitostí.",
+  "alternateName": [
+   "Adam Starovič RE/MAX Olomouc",
+   "Adam Starovič realitní makléř Ostrava"
+  ],
+  "description": "Realitní makléř pro Olomoucký a Moravskoslezský kraj, hlavně Olomouc a Ostrava. Prodej, koupě a odhad ceny nemovitostí, právní servis, financování a pojištění nemovitostí.",
   "url": "https://adamstarovic.cz/",
   "image": "https://adamstarovic.cz/img/og-image.jpg",
   "logo": "https://adamstarovic.cz/apple-touch-icon.png",
@@ -364,8 +368,16 @@ form.lead{scroll-margin-top:84px}
     "name": "Olomoucký kraj"
    },
    {
+    "@type": "AdministrativeArea",
+    "name": "Moravskoslezský kraj"
+   },
+   {
     "@type": "City",
     "name": "Olomouc"
+   },
+   {
+    "@type": "City",
+    "name": "Ostrava"
    },
    {
     "@type": "City",
@@ -381,11 +393,23 @@ form.lead{scroll-margin-top:84px}
    },
    {
     "@type": "City",
-    "name": "Jeseník"
+    "name": "Opava"
    },
    {
     "@type": "City",
-    "name": "Hranice"
+    "name": "Frýdek-Místek"
+   },
+   {
+    "@type": "City",
+    "name": "Havířov"
+   },
+   {
+    "@type": "City",
+    "name": "Karviná"
+   },
+   {
+    "@type": "City",
+    "name": "Nový Jičín"
    },
    {
     "@type": "City",
@@ -401,15 +425,11 @@ form.lead{scroll-margin-top:84px}
    },
    {
     "@type": "City",
-    "name": "Mohelnice"
+    "name": "Hranice"
    },
    {
     "@type": "City",
-    "name": "Zábřeh"
-   },
-   {
-    "@type": "City",
-    "name": "Lipník nad Bečvou"
+    "name": "Jeseník"
    }
   ],
   "parentOrganization": {
@@ -436,7 +456,9 @@ form.lead{scroll-margin-top:84px}
    "pozemky",
    "hypotéky",
    "pojištění nemovitostí",
-   "právní servis při převodu nemovitosti"
+   "právní servis při převodu nemovitosti",
+   "prodej bytu Ostrava",
+   "prodej domu Ostrava"
   ],
   "makesOffer": [
    {
@@ -444,7 +466,10 @@ form.lead{scroll-margin-top:84px}
     "itemOffered": {
      "@type": "Service",
      "name": "Prodej nemovitosti",
-     "areaServed": "Olomoucký kraj"
+     "areaServed": [
+      "Olomoucký kraj",
+      "Moravskoslezský kraj"
+     ]
     }
    },
    {
@@ -452,7 +477,10 @@ form.lead{scroll-margin-top:84px}
     "itemOffered": {
      "@type": "Service",
      "name": "Koupě nemovitosti",
-     "areaServed": "Olomoucký kraj"
+     "areaServed": [
+      "Olomoucký kraj",
+      "Moravskoslezský kraj"
+     ]
     }
    },
    {
@@ -460,7 +488,10 @@ form.lead{scroll-margin-top:84px}
     "itemOffered": {
      "@type": "Service",
      "name": "Odhad ceny nemovitosti zdarma",
-     "areaServed": "Olomoucký kraj"
+     "areaServed": [
+      "Olomoucký kraj",
+      "Moravskoslezský kraj"
+     ]
     }
    },
    {
@@ -468,7 +499,10 @@ form.lead{scroll-margin-top:84px}
     "itemOffered": {
      "@type": "Service",
      "name": "Právní servis při prodeji nemovitosti",
-     "areaServed": "Olomoucký kraj"
+     "areaServed": [
+      "Olomoucký kraj",
+      "Moravskoslezský kraj"
+     ]
     }
    },
    {
@@ -476,7 +510,10 @@ form.lead{scroll-margin-top:84px}
     "itemOffered": {
      "@type": "Service",
      "name": "Financování a hypotéka",
-     "areaServed": "Olomoucký kraj"
+     "areaServed": [
+      "Olomoucký kraj",
+      "Moravskoslezský kraj"
+     ]
     }
    },
    {
@@ -484,7 +521,10 @@ form.lead{scroll-margin-top:84px}
     "itemOffered": {
      "@type": "Service",
      "name": "Pojištění nemovitosti",
-     "areaServed": "Olomoucký kraj"
+     "areaServed": [
+      "Olomoucký kraj",
+      "Moravskoslezský kraj"
+     ]
     }
    }
   ]
@@ -549,7 +589,7 @@ form.lead{scroll-margin-top:84px}
     "name": "Působíte i mimo Olomouc?",
     "acceptedAnswer": {
      "@type": "Answer",
-     "text": "Ano. Nejvíc pracuji v Olomouci a jejím okolí, ale prodávám a hledám nemovitosti v celém Olomouckém kraji, například v Prostějově, Přerově, Šternberku, Litovli, Uničově nebo Šumperku."
+     "text": "Ano. Nejvíc pracuji v Olomouci a jejím okolí, ale prodávám a hledám nemovitosti v celém Olomouckém a Moravskoslezském kraji, například v Ostravě, Opavě, Frýdku-Místku, Havířově, Prostějově, Přerově nebo Šumperku."
     }
    },
    {
@@ -593,8 +633,8 @@ form.lead{scroll-margin-top:84px}
 
     <div class="hero-grid">
       <div class="hero-copy">
-        <h1>Realitní makléř v Olomouci a Olomouckém kraji</h1>
-        <p class="lead">Prodám váš byt, dům nebo pozemek za nejlepší cenu a kupujícím pomůžu najít nový domov. Od odhadu ceny přes hypotéku a právní servis po předání klíčů máte všechno v jedněch rukou.</p>
+        <h1>Realitní makléř v Olomouci, Ostravě a okolí</h1>
+        <p class="lead">Prodám váš byt, dům nebo pozemek v Olomouckém i Moravskoslezském kraji za nejlepší cenu a kupujícím pomůžu najít nový domov. Od odhadu ceny přes hypotéku a právní servis po předání klíčů máte všechno v jedněch rukou.</p>
         <form class="search" id="heroSearch" role="search">
           <input id="q" type="search" placeholder="Hledat lokalitu, např. Nová Ulice" aria-label="Hledat lokalitu nebo typ nemovitosti">
           <button type="submit" aria-label="Hledat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
@@ -623,8 +663,8 @@ form.lead{scroll-margin-top:84px}
     </a>
     <a href="#oblast" class="hot">
       <h3>Kde působím</h3>
-      <span class="lab"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>Olomoucký kraj</span>
-      <p>Olomouc a všechny její čtvrti, Prostějov, Přerov, Šternberk, Litovel, Uničov, Šumperk a další města i obce kraje.</p>
+      <span class="lab"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>Olomoucký a Moravskoslezský kraj</span>
+      <p>Hlavně Olomouc a okolí, ale i Ostrava, Prostějov, Přerov, Opava, Frýdek-Místek, Šumperk a další města obou krajů.</p>
     </a>
   </div>
   <div class="tri-dots" aria-hidden="true"></div>
@@ -634,7 +674,7 @@ form.lead{scroll-margin-top:84px}
   <div class="wrap">
     <div class="center">
       <h2>Nemovitosti na prodej v Olomouci a okolí</h2>
-      <p>Byty, rodinné domy a pozemky, které právě prodávám v Olomouckém kraji.</p>
+      <p>Byty, rodinné domy a pozemky, které právě prodávám v Olomouckém a Moravskoslezském kraji.</p>
     </div>
     <div class="homes" id="listings"></div>
     <div class="more"><button class="btn btn-dark" type="button" id="moreBtn">Zobrazit všechny nabídky</button></div>
@@ -687,13 +727,17 @@ form.lead{scroll-margin-top:84px}
 <section id="oblast" class="area">
   <div class="wrap">
     <div class="center">
-      <h2>Reality v Olomouci a celém Olomouckém kraji</h2>
-      <p>Prodávám byty, rodinné domy, pozemky, chaty i komerční prostory. Nejčastěji v Olomouci a okolí, ale rád vám pomůžu kdekoli v kraji. Díky kanceláři RE/MAX Komfort mám přehled o cenách i o tom, kdo v regionu právě nemovitost hledá.</p>
+      <h2>Reality v Olomouckém a Moravskoslezském kraji</h2>
+      <p>Prodávám byty, rodinné domy, pozemky, chaty i komerční prostory. Nejčastěji v Olomouci a okolí, ale rád vám pomůžu kdekoli v Olomouckém a Moravskoslezském kraji, včetně Ostravy. Díky kanceláři RE/MAX Komfort mám přehled o cenách i o tom, kdo v regionu právě nemovitost hledá.</p>
     </div>
     <div class="area-grid">
       <div class="area-box">
-        <h3>Města a obce</h3>
+        <h3>Olomoucký kraj</h3>
         <ul class="chips"><li>Olomouc</li><li>Prostějov</li><li>Přerov</li><li>Šumperk</li><li>Jeseník</li><li>Hranice</li><li>Šternberk</li><li>Litovel</li><li>Uničov</li><li>Mohelnice</li><li>Zábřeh</li><li>Lipník nad Bečvou</li><li>Velká Bystřice</li><li>Hlubočky</li><li>Velký Týnec</li><li>Bohuňovice</li><li>Horka nad Moravou</li><li>Náměšť na Hané</li></ul>
+      </div>
+      <div class="area-box">
+        <h3>Moravskoslezský kraj</h3>
+        <ul class="chips"><li>Ostrava</li><li>Opava</li><li>Frýdek-Místek</li><li>Havířov</li><li>Karviná</li><li>Nový Jičín</li><li>Třinec</li><li>Kopřivnice</li><li>Bohumín</li><li>Orlová</li><li>Bruntál</li><li>Krnov</li><li>Studénka</li><li>Bílovec</li><li>Frenštát pod Radhoštěm</li><li>Hlučín</li></ul>
       </div>
       <div class="area-box">
         <h3>Čtvrti Olomouce</h3>
@@ -701,8 +745,8 @@ form.lead{scroll-margin-top:84px}
       </div>
     </div>
     <div class="area-svc">
-      <div><h3>Prodej nemovitosti</h3><p>Prodej bytu, domu nebo pozemku v Olomouckém kraji za reálnou tržní cenu, s profesionálními fotkami, videem a 3D prohlídkou.</p></div>
-      <div><h3>Koupě nemovitosti</h3><p>Pomůžu vám najít byt nebo dům v Olomouci a okolí, prověřím nemovitost a dohlédnu na bezpečný převod.</p></div>
+      <div><h3>Prodej nemovitosti</h3><p>Prodej bytu, domu nebo pozemku v Olomouckém a Moravskoslezském kraji za reálnou tržní cenu, s profesionálními fotkami, videem a 3D prohlídkou.</p></div>
+      <div><h3>Koupě nemovitosti</h3><p>Pomůžu vám najít byt nebo dům v Olomouci, Ostravě a okolí, prověřím nemovitost a dohlédnu na bezpečný převod.</p></div>
       <div><h3>Odhad ceny nemovitosti</h3><p>Odhad tržní ceny zdarma podle skutečných prodejů v dané lokalitě, ne podle inzerátů.</p></div>
       <div><h3>Hypotéka, pojištění a právní servis</h3><p>Financování, pojištění i smlouvy, úschova a katastr zajistíme pod jednou střechou.</p></div>
     </div>
@@ -720,7 +764,7 @@ form.lead{scroll-margin-top:84px}
       <details><summary>Jak dlouho trvá prodej nemovitosti?</summary><p>Záleží na typu nemovitosti, lokalitě a hlavně na správně nastavené ceně. Dobře připravená nemovitost za reálnou cenu se obvykle prodá během několika týdnů až měsíců. Celou dobu vám každý týden posílám přehled, co se děje.</p></details>
       <details><summary>Jsou peníze z prodeje v bezpečí?</summary><p>Ano. Kupní cena jde do úschovy u advokáta, notáře nebo banky a prodávajícímu se vyplatí až po zápisu nového vlastníka do katastru nemovitostí. Kompletní právní servis včetně smluv a návrhu na vklad zajistíme.</p></details>
       <details><summary>Pomůžete kupujícím s hypotékou a pojištěním?</summary><p>Ano. Zajistíme financování, tedy vyřízení hypotéky nebo úvěru na nemovitost, i pojištění nemovitosti a domácnosti. Kupující tak má všechno na jednom místě.</p></details>
-      <details><summary>Působíte i mimo Olomouc?</summary><p>Ano. Nejvíc pracuji v Olomouci a jejím okolí, ale prodávám a hledám nemovitosti v celém Olomouckém kraji, například v Prostějově, Přerově, Šternberku, Litovli, Uničově nebo Šumperku.</p></details>
+      <details><summary>Působíte i mimo Olomouc?</summary><p>Ano. Nejvíc pracuji v Olomouci a jejím okolí, ale prodávám a hledám nemovitosti v celém Olomouckém a Moravskoslezském kraji, například v Ostravě, Opavě, Frýdku-Místku, Havířově, Prostějově, Přerově nebo Šumperku.</p></details>
       <details><summary>Hledám byt nebo dům v Olomouci. Můžete mi pomoct?</summary><p>Ano. Napište mi, co hledáte, jaký máte rozpočet a ve které lokalitě. Vhodné nemovitosti vám pošlu často dřív, než se objeví na realitních portálech.</p></details>
     </div>
   </div>
@@ -731,7 +775,7 @@ form.lead{scroll-margin-top:84px}
     <aside class="me">
       <img class="rx" src="img/remax-logo.png" alt="RE/MAX Komfort Olomouc" width="480" height="129">
       <div><h3>Adam Starovič</h3><div class="role">Realitní makléř RE/MAX Komfort</div></div>
-      <p>Jsem realitní makléř v kanceláři RE/MAX Komfort v Olomouci. Pomáhám lidem prodat, koupit i pronajmout nemovitost v Olomouci a celém Olomouckém kraji. Zakládám si na férovém jednání, rychlé komunikaci a na tom, abyste v každém kroku věděli, co se děje.</p>
+      <p>Jsem realitní makléř v kanceláři RE/MAX Komfort v Olomouci. Pomáhám lidem prodat, koupit i pronajmout nemovitost v Olomouci, Ostravě a v celém Olomouckém i Moravskoslezském kraji. Zakládám si na férovém jednání, rychlé komunikaci a na tom, abyste v každém kroku věděli, co se děje.</p>
       <dl>
         <div><dt>Telefon</dt><dd><a href="tel:+420776120447" style="text-decoration:none">+420 776 120 447</a></dd></div>
         <div><dt>E-mail</dt><dd><a href="mailto:adam.starovic@remax-czech.cz" style="text-decoration:none">adam.starovic@remax-czech.cz</a></dd></div>
