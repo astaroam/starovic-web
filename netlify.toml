@@ -1,2 +1,26 @@
 [build]
   publish = "."
+
+# Jedna adresa pro Google: vše na https://adamstarovic.cz
+[[redirects]]
+  from = "https://www.adamstarovic.cz/*"
+  to = "https://adamstarovic.cz/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/*.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
