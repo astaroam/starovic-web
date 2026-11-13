@@ -216,7 +216,8 @@ footer .logo{color:var(--ink)}
 footer nav{display:flex;gap:6px 20px;flex-wrap:wrap}
 footer nav a{text-decoration:none}
 footer nav a:hover{color:var(--red)}
-footer .credit{display:inline-flex;align-items:center;gap:8px}
+footer .credit{display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:none;transition:opacity .2s}
+footer .credit:hover{opacity:.75}
 footer .credit img{height:18px;width:auto;display:block}
 
 /* mobile */
@@ -820,7 +821,7 @@ header.hero,main,footer{position:relative;z-index:0}
     <a class="logo" href="#uvod"><img class="rx" src="img/remax-logo.png" alt="RE/MAX"><span class="sep"></span><span><b>Adam Starovič</b><small>Komfort · Olomouc</small></span></a>
     <nav aria-label="Patička"><a href="#sluzby">Služby</a><a href="#nabidka">Nabídka</a><a href="#dotazy">Dotazy</a><a href="#o-mne">Kontakt</a></nav>
     <span class="copy">© 2026 · IČO 29745578</span>
-    <span class="credit">Web vytvořilo <img src="img/solvmedia.png" alt="Solvmedia" width="400" height="144"></span>
+    <a class="credit" href="https://solvmedia.cz" target="_blank" rel="noopener" aria-label="Web vytvořilo Solvmedia – solvmedia.cz">Web vytvořilo <img src="img/solvmedia.png" alt="Solvmedia" width="400" height="144"></a>
   </div>
 </footer>
 
