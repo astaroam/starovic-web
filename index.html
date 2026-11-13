@@ -48,7 +48,7 @@
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
 body{background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--tx);-webkit-font-smoothing:antialiased}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--navy)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:1001;background:var(--navy)}
 h1,h2,h3{font-family:var(--hd);margin:0;line-height:1.12;text-wrap:balance;letter-spacing:-.01em}
 p{margin:0}
 a{color:inherit}
@@ -287,7 +287,7 @@ footer .credit img{height:18px;width:auto;display:block}
 
 /* sticky lišta */
 html{scroll-padding-top:84px}
-.topbar{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;color:#fff;transition:background .25s,box-shadow .25s,backdrop-filter .25s}
+.topbar{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:1000;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);will-change:transform;color:#fff;transition:background .25s,box-shadow .25s,backdrop-filter .25s}
 .topbar .nav{transition:padding .25s}
 .topbar.solid{background:rgba(12,26,51,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 6px 24px rgba(0,0,0,.18)}
 .topbar.solid .nav{padding-block:12px}
@@ -329,6 +329,9 @@ form.lead{scroll-margin-top:84px}
 }
 
 /* úpravy přehlednosti */
+header.hero,main,footer{position:relative;z-index:0}
+.tri{z-index:1}
+
 #nabidka{padding-block:0 72px}
 #nabidka .center{margin-bottom:24px}
 .empty-box{padding:32px 24px}
