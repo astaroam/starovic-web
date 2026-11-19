@@ -770,8 +770,8 @@ header.hero,main,footer{position:relative;z-index:0}
       </dl>
     </aside>
 
-    <form class="lead" id="leadForm" name="poptavka" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
-      <input type="hidden" name="form-name" value="poptavka"><input type="hidden" name="poptavka" value=""><p hidden><label>Nevyplňujte: <input name="bot-field"></label></p>
+    <form class="lead" id="leadForm" name="poptavka" method="POST" novalidate>
+      <input type="hidden" name="poptavka" value=""><input type="checkbox" name="botcheck" hidden tabindex="-1" autocomplete="off">
       <h2>Prodáváte, nebo hledáte?</h2>
       <div class="modes" role="tablist" aria-label="Typ poptávky">
         <button type="button" role="tab" id="tab-prodej" aria-selected="true" data-mode="prodej">Prodávám</button>
@@ -826,8 +826,9 @@ header.hero,main,footer{position:relative;z-index:0}
 </footer>
 
 <script>
-/* Kam se mají odesílat formuláře. Prázdné = ukázkový režim (nic se neodešle). */
-const FORM_ENDPOINT = "/";
+/* Formulář se odesílá přes Web3Forms. Prázdný klíč = ukázkový režim (nic se neodešle). */
+const FORM_ENDPOINT = "https://api.web3forms.com/submit";
+const WEB3FORMS_KEY = "5a62309e-8a2a-454b-b008-ca701371d8a3";
 
 /* Nabídka nemovitostí: ukázková data a fotky, nahradíme skutečnými. */
 const LISTINGS = [];
@@ -900,9 +901,14 @@ form.addEventListener("submit", async e => {
   data.poptavka = {prodej:"Prodej nemovitosti", hledam:"Hledá nemovitost", odhad:"Odhad ceny"}[mode];
   form.querySelectorAll("[data-only]").forEach(el => { if(el.hidden) el.querySelectorAll("[name]").forEach(i => delete data[i.name]); });
   let sent = false;
-  if(FORM_ENDPOINT){
-    data["form-name"] = "poptavka";
-    try{ const r = await fetch(FORM_ENDPOINT, {method:"POST", headers:{"Content-Type":"application/x-www-form-urlencoded"}, body: new URLSearchParams(data).toString()}); sent = r.ok; }catch(_){}
+  if(WEB3FORMS_KEY){
+    if(data.botcheck) return;
+    delete data.botcheck;
+    data.access_key = WEB3FORMS_KEY;
+    data.subject = "Nová poptávka z adamstarovic.cz: " + data.poptavka;
+    data.from_name = "adamstarovic.cz";
+    if(data.email) data.replyto = data.email;
+    try{ const r = await fetch(FORM_ENDPOINT, {method:"POST", headers:{"Content-Type":"application/json","Accept":"application/json"}, body: JSON.stringify(data)}); const j = await r.json().catch(()=>({})); sent = r.ok && j.success !== false; }catch(_){}
     if(!sent){ err.textContent = "Odeslání se nepovedlo. Zkuste to prosím znovu, nebo mi zavolejte."; return; }
   }
   form.innerHTML = `<div class="done"><span class="ok">✓ Poptávka odeslána</span>
